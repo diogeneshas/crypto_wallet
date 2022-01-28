@@ -1,7 +1,9 @@
 <h1>Seja Bem-Vindo</h1>
-<p>O idiamo usado nessa aplicacao e: <strong> <%= locale(I18n.locale) %></strong> </p>
-<p><strong>Data:</strong> <%= Date.today %></p> 
+<p>O idiamo usado nessa aplicacao e: <strong> <%= locale %></strong> </p>
+<p><strong>Data:</strong> <%= l(Date.today) %></p> 
 <p>Data: <%= data_br(Date.today) %></p>
+
+<p><%= t('hello') %></p>
 
 <%= link_to "Cadastro de Moedas", coins_path %> <br>
 <%= link_to "Cadastro de Tipos de Minerecao", mining_types_path %>
